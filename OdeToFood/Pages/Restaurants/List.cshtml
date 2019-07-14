@@ -1,0 +1,60 @@
+﻿@page
+@model OdeToFood.Pages.Restaurants.ListModel
+@{ 
+    ViewData["Title"] = "List";
+}
+
+<h1>Restaurants</h1>
+<p>@Model.Message</p>
+
+
+<!-- Search form, name="searchTerm" is if you use query string and pass an argument into OnGet(), asp-for="SearchTerm" is the model binding method -->
+<!-- To return the null or empty value to display all the restaurants, value="" should go in somewhere -->
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" name="searchTerm" asp-for="SearchTerm" />
+            <button class=""><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+</form>
+
+<!-- _Summary.cshtml partial view in here instead of the table -->
+@foreach (var restaurant in Model.Restaurants) {
+    <partial name="_Summary" model="restaurant" />
+}
+
+<!-- asp-page is the name of the cshtml
+                 asp-route-XXX where XXX can be the name of an element with a value like a search box
+                or asp-route-restaurantId which is the name of the argument in Detail.cshtml.cs for a query string
+                Intellisense will not work with this (yet)
+<table class="table">
+    @foreach (var restaurant in Model.Restaurants) {
+        <tr>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Location</td>
+            <td>@restaurant.Cuisine</td>
+            <td>
+
+                <a class="btn btn-outline-dark" asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">
+                    <i class="fa fa-search-plus"></i>
+                </a>
+                <a class="btn btn-outline-dark" asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">
+                    <i class="fa fa-edit"></i>
+                </a>
+                <a class="btn btn-outline-dark" asp-page="./Delete" asp-route-restaurantId="@restaurant.Id">
+                    <i class="fa fa-trash"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+-->
+
+<a asp-page=".\Edit" class="btn btn-dark">Add New</a>
+
+<!-- this will go into the section in _Layout with section footer -->
+@section footer {
+    <p>@Model.ConfigMessage</p>
+   
+}

@@ -1,0 +1,42 @@
+﻿@page "{restaurantId:int?}" 
+<!-- Restaurant id as a parameter via url -->
+
+@model OdeToFood.Pages.Restaurants.EditModel
+<!-- specify the model class -->
+
+@if (Model.Restaurant.Id > 0) {
+    <h1>Editing @Model.Restaurant.Name</h1>
+    ViewData["Title"] = "Editing";
+} else {
+    <h1>Adding a new restaurant</h1>
+    ViewData["Title"] = "Adding";
+}
+
+<!-- This in combination with Bootstrap will provide most of what is needed for a form -->
+<form method="post">
+    <input type="hidden" asp-for="Restaurant.Id" />
+    <div class="form-group">
+        <label asp-for="Restaurant.Name"></label>
+        <input asp-for="Restaurant.Name" class="form-control" />
+        <span class="text-danger" asp-validation-for="Restaurant.Name"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Restaurant.Location"></label>
+        <input asp-for="Restaurant.Location" class="form-control" />
+        <span class="text-danger" asp-validation-for="Restaurant.Location"></span>
+    </div>
+    <!-- Here a view's drop down select has been bound to the model-->
+    <div class="form-group">
+        <label asp-for="Restaurant.Cuisine"></label>
+        <select class="form-control" asp-for="Restaurant.Cuisine" asp-items="Model.Cuisines"></select>
+        <span class="text-danger" asp-validation-for="Restaurant.Cuisine"></span>
+    </div>
+    <button type="submit" class="btn-light">Save</button>
+</form>
+
+<!-- Include the partial view of the name="" specified. If you check what it is in it, then you will find some scripts. No other code necessary -->
+<!-- in there you will see a jquery client side validation script that automatically validates the form inputs -->
+@section  Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}

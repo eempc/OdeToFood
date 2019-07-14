@@ -1,0 +1,14 @@
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.2\OdeToFood.Data.csprojAssemblyReference.cache
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.2\OdeToFood.Data.csproj.CoreCompileInputs.cache
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.2\OdeToFood.Data.AssemblyInfoInputs.cache
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.2\OdeToFood.Data.AssemblyInfo.cs
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.2\OdeToFood.Data.deps.json
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.2\OdeToFood.Data.dll
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.2\OdeToFood.Data.pdb
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.2\OdeToFood.Core.dll
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.2\OdeToFood.Core.pdb
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.2\OdeToFood.Data.csproj.CopyComplete
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.2\OdeToFood.Data.dll
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.2\OdeToFood.Data.pdb
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.2\OdeToFood.Data.runtimeconfig.json
+D:\Projects\Tutorials\PluralSight\CSharp\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.2\OdeToFood.Data.runtimeconfig.dev.json
